@@ -13,26 +13,16 @@
 				<br>
 			</header>
 			
-			
-			
-			
-			
 			<div id="content">
 			<br><br>
-			
-			
-			
-				<div id="leftcol">
+		
+				<div id="leftcol"> 
 					<h1>Summary of story</h1>
 					<p id="Summary">That’s it you are on the final stage of the journey to your new home… Australia!, 
 					you have been in the air for a few hours now, you are now beginning to get tired from flying all day. 
 					There isn’t much to do on board the flight apart from watching a film or going for a nap, what would 
 					you like to do? </p>
-				
 				</div>
-			
-
-
 
 				<div id="rightcol">
 					<div id="rightcol1">
@@ -45,14 +35,11 @@
 					</div>
 				</div>
 				
-				
-				
 				<div id="midcol">
 					
 					<div id="midcol1">
 					<img id=img1 src="New folder/Plane_interior.webp">
 					</div>
-					
 					
 					<div id="midcol2">
 					<p id="p1">That’s it you are on the final stage of the journey to your new 
@@ -85,24 +72,19 @@
 					
 				</div>
 			
-			
-			
-			
-			
 			</div>
 			
 			<script> 
 				
-				
 				function window1() {
-					var text = document.getElementById('p1').innerHTML = 'You look out of the window all you can see below you is the indian ocean.';
-					document.getElementById('img1').src = 'new folder/Window.jpg';
-					var paragraph = document.getElementById("Summary");
-					paragraph.textContent += text ;
-					document.getElementById('buttons').remove();
+					var text = document.getElementById('p1').innerHTML = 'You look out of the window all you can see below you is the indian ocean.'; //here I am writing a text from the story into the element p1 it is then being stored as a variable called text 
+					document.getElementById('img1').src = 'new folder/Window.jpg'; //here i am displaying an image by changing the source of the image that is already stored in the element img1, this causes the website to display a different image 
+					var paragraph = document.getElementById("Summary"); //here I am assigning another element called summary to a variable paragraph
+					paragraph.textContent += text ; // here I am adding the text variable above to the text content of the variable paragraph, this allows text to be added dynamically
+					document.getElementById('buttons').remove(); // I am removing the section that is the element buttons and then on the line below I am replacing the buttons that will be displayed on the site
 					document.getElementById('midcol3').innerHTML = '<div id ="buttons"><br><button type="button" onclick ="film()">Watch a film</button><br><br><button type="button" onclick ="sleep()">Try and get some sleep.</button></div>';
 					
-				}
+				} // Overall this function will activate when the window1() button is clicked, it will then change the content of the page allowing the user to progress through the story without having to change pages.
 				
 				function film() {
 					var text = document.getElementById('p1').innerHTML = ' You choose to watch a film, there aren’t many films you recognise so you decide to watch the airlines pick, it’s been a long journey and there is still more to go, you begin to fall asleep.'; 
@@ -130,7 +112,7 @@
 				}
 				
 				function awaken() {
-					var text = document.getElementById('p1').innerHTML = ' You once again awaken, however this time you feel a cool breeze, sand on your body, and water washing against your feet, it looks like you are on an island with a golden beach and exoctic water.';					
+					var text = document.getElementById('p1').innerHTML = ' You once again awaken, however this time you feel a cool breeze, sand on your body, and water washing against your feet, it looks like you are on an island with a golden beach and exoctic water. To the west you can see a hill, to the north thre is a jungle, to the east there is a cliff face';					
 					document.getElementById('img1').src = 'New folder/Beach'; document.getElementById('img1').alt = 'Picture of Beach';
 					var paragraph = document.getElementById("Summary");
 					paragraph.textContent += text;
@@ -390,11 +372,7 @@
 					document.getElementById('buttons').remove();
 					document.getElementById('midcol3').innerHTML = 'You lose, to retry, please restart the game.'
 				}
-				
-				
-				
-				
-				
+					
 			</script>
 			
 			
